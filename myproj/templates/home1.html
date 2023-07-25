@@ -5,9 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        text-align: center;
+        color: #007bff;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        color: #333;
+      }
+
+      input[type="text"] {
+        width: 90%;
+        padding: 10px;
+        
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 20px 0;
+      }
+    </style>
   </head>
-  <form action="page1">
-    <center>
+  <body>
+    <form action="page1">
       <h1>HOME</h1>
       <hr />
       <br />
@@ -15,6 +77,6 @@
       <input type="text" id="nos" name="nos" /><br /><br />
       <input type="submit" value="SUBMIT" />
       <hr />
-    </center>
-  </form>
+    </form>
+  </body>
 </html>

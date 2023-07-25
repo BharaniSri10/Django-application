@@ -1,51 +1,70 @@
+<!DOCTYPE html>
 <html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
-        .wrapper{
-    text-align: center;
-}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .button{
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    padding: 10px;
-    height: 50px;
-    width: 120px;
-    font-size: medium;
-    font-weight: 100;
-   font-variant: small-caps;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-}
-    .button2{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  
-    padding: 10px;
-    height: 50px;
-    width: 120px;
-    font-size: medium;
-   font-weight: 100;
-   font-variant: small-caps;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-   
-}
-</style>
+        .button,
+        .button2 {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+        }
 
-<body background="homebg.jpg">
-   
-    
-     <div class="wrapper">
+        .button {
+            background-color: #007bff;
+        }
+
+        .button2 {
+            background-color: #ff4500;
+        }
+        .button2:hover {
+            background-color: #b63607;
+        }
+       
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
         <form action="add">
             <button class="button">ADD USER</button>
         </form>
-        <form action="find"><button class="button2">FIND USER</button></form>
-        
-       
-     </div>
-    
+        <form action="find">
+            <button class="button2">FIND USER</button>
+        </form>
+    </div>
+
 </body>
-   
-</html>
+
+</html
