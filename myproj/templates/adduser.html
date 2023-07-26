@@ -73,12 +73,45 @@
     </style>
   </head>
   <body>
+    <script>
+      function myfunc(){
+        var num=document.getElementById("adhar").value;
+        var age=document.getElementById("age").value;
+        var name=document.getElementById("name").value;
+        var native=document.getElementById("native").value;
+        var number=document.getElementById("mobile").value;
+        
+   
+        if(!Number.isInteger(+num)){
+         alert("Number only accepts");
+         return false;
+        };
+        var letters = /^[A-Z]+$/i;
+
+        if (!letters.test(name)){
+          alert("Name should contains only letters");
+          return false;
+        }
+        if(!Number.isInteger(+age)){
+         alert("Age should be the number");
+         return false;
+        };
+        if(!Number.isInteger(+number)){
+         alert("Mobile should be the number");
+         return false;
+        };
+
+
+      }
+  
+    </script>
     <form action="page2">
       <h1>GIRLS HOSTEL</h1>
       <hr />
       <br /><br />
       <label for="adhar">Enter Aadhar: </label>
       <input type="text" id="adhar" name="adhar" /><br /><br />
+     
       <label for="name">Enter Name:</label>
       <input type="text" id="name" name="name" /><br /><br />
       <label for="age">Enter Age:</label>
@@ -89,7 +122,10 @@
       <input type="text" id="native" name="native" /><br /><br />
       <label for="mobile">Enter Mobile:</label>
       <input type="text" id="mobile" name="mobile" /><br /><br />
-      <input type="submit" value="ENTER" />
+      <input type="submit" 
+      onclick=" return myfunc()"
+      value="ENTER" />
+     
     </form>
   </body>
 </html>
